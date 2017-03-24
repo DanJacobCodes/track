@@ -1,15 +1,17 @@
-$(document).ready(function){
-  $("#form").submit(function(event){
+$(document).ready(function() {
+  $("#form").submit(function(event) {
 
-    var os = $("#os").val();
     var job = $("#job").val();
-    var business = $("#business").val();
-    var unicorn = $("#unicorn").val();
+    var corp = $("#corp").val();
     var tech = $("#tech").val();
+    var os = $("#os").val();
+    var start = $("#start").val();
 
-    if (os === "Mac" || "mac") {
+    if (job === "#steady" && corp === "#large" && tech === "#micro" && os === "#pc" && start === "#no") {
+      $(".php").show();
+
+      event.preventDefault()
 
     }
-  }
-
-}
+  });
+});
