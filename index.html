@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-      <link href="css/styles.css" rel="stylesheet" type="text/css">
-      <script src="js/jquery-3.2.0.js"></script>
-      <script src="js/scripts.js"></script>
+     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+     <link rel="stylesheet" href="css/styles.css" type="text/css">
+     <script src="js/jquery-3.2.0.js"></script>
+     <script src="js/scripts.js"></script>
     <title>Epicodus Track Suggester</title>
   </head>
   <body>
@@ -13,30 +13,71 @@
       <form id="track">
         <div class="form-group">
           <label for="job">Steady job or contract work?</label>
-          <input id="job" class ="form-control" type="text">
+          <select class="form-control" id="job">
+            <option value="steady">Steady job</option>
+            <option value="contract">Contract</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="business">Do you want to work for a large corporation or a startup?</label>
-          <input id="business" class ="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="unicorn">Do you want to launch the next startup unicorn?</label>
-          <input id="unicorn" class ="form-control" type="text">
+          <label for="corp">Large Corporation or Startup?</label>
+          <select class="form-control" id="corp">
+            <option value="large">Large Corporation</option>
+            <option value="startup">Startup</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="tech">Microsoft or Google</label>
-          <input id="tech" class ="form-control" type="text">
+          <select class="form-control" id="tech">
+            <option value="micro">Microsoft</option>
+            <option value="goog">Google</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="os">Are you a Mac or PC?</label>
-          <input id ="os" class="form-control" type="text">
-
+          <label for="os">Are you a Mac or a PC?</label>
+          <select class="form-control" id="os">
+            <option value="mac">Mac</option>
+            <option value="pc">PC</option>
+          </select>
         </div>
-
-
-
-      <button type="submit" class="btn">My Language is</button>
+        <div class="form-group">
+          <label for="start">Do you want to launch a startup?</label>
+          <select class="form-control" id="start">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      <button type="submit" class="btn">Go!</button>
       </div>
+      <!-- Format for drop down jawn delete after -->
+      <!-- <label for="c">Coffee or Tea?</label>
+      <select class="form-control" id="c">
+        <option value="1">Coffee</option>
+        <option value="2">Tea</option>
+      </select> -->
+
     </form>
+
+    <!-- Beginning of input options -->
+    <h2 id="select">You should pursue:</h2>
+    <div class="php">
+      <img src="img/php.jpeg" alt="php logo">
+      <p>
+     </p>
+    </div>
+    <div class="c">
+      <img src="img/c.jpeg" alt="C# logo">
+      <p>
+      </p>
+    </div>
+    <div class="Ruby">
+      <img src="img/Ruby.jpeg" alt="Ruby logo">
+      <p>
+      </p>
+    </div>
+    <div class="java">
+      <img src="img/java.jpeg" alt="Java logo">
+      <p>
+      </p>
+    </div>
   </body>
 </html>

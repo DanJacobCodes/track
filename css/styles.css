@@ -5,6 +5,31 @@
   background-color: #00b3b4;
 }
 
-/*#os {
+h2 {
+  text-align: center;
+  display: block;
+}
+
+button{
+  background-color: #00b3b4;
+  color: white;
+}
+
+.php{
   display: none;
-}*/
+
+}
+
+.c{
+  display: none;
+
+}
+
+.Ruby {
+  display: none;
+
+}
+
+.java {
+  display: none;
+}
