@@ -33,3 +33,7 @@ button{
 .java {
   display: none;
 }
+img{
+  float: left;
+  display: inline;
+}
